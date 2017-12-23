@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gating:Gating-ML xmlns:gating="http://www.isac-net.org/std/Gating-ML/v2.0/gating" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:transforms="http://www.isac-net.org/std/Gating-ML/v2.0/transformations" xmlns:data-type="http://www.isac-net.org/std/Gating-ML/v2.0/datatypes" xsi:schemaLocation="http://www.isac-net.org/std/Gating-ML/v2.0/gating http://flowcyt.sourceforge.net/gating/2.0/xsd/Gating-ML.v2.0.xsd http://www.isac-net.org/std/Gating-ML/v2.0/transformations http://flowcyt.sourceforge.net/gating/2.0/xsd/Transformations.v2.0.xsd http://www.isac-net.org/std/Gating-ML/v2.0/datatypes http://flowcyt.sourceforge.net/gating/2.0/xsd/DataTypes.v2.0.xsd">
+  <data-type:custom_info>
+    <cytobank>
+      <about>Gating-ML 2.0 export of Cytobank experiment number *EXPERIMENT_ID*.</about>
+      <cytobank_gating_version>2.0</cytobank_gating_version>
+      <experiment_number>*EXPERIMENT_ID*</experiment_number>
+      <experiment_title>*EXPERIMENT_NAME*</experiment_title>
+      <experiment_url>https://*SITE*.cytobank.org/cytobank/experiments/*EXPERIMENT_ID*</experiment_url>
+      <export_timestamp>2017-06-28T17:18:17.466-07:00</export_timestamp>
+    </cytobank>
+  </data-type:custom_info>

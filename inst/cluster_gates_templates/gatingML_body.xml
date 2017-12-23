@@ -1,0 +1,57 @@
+  <gating:PolygonGate gating:id="Gate_*MAX_GATE_ID_PLUS_1*">
+    <data-type:custom_info>
+      <cytobank>
+        <name>*NAME**INTEGER*</name>
+        <id>*MAX_GATE_ID_PLUS_1*</id>
+        <gate_id>*MAX_GATE_ID_PLUS_1*</gate_id>
+        <type>PolygonGate</type>
+        <version>1</version>
+        <compensation_id>-2</compensation_id>
+        <fcs_file_id />
+        <tailored>false</tailored>
+        <tailored_per_population>false</tailored_per_population>
+        <tailored_per_population_gateset_id />
+        <fcs_file_filename />
+        <definition>{"scale":{"x":{"flag":1,"argument":"1","min":*INTEGER_MIN_MINUS_1*,"max":*INTEGER_MAX_PLUS_1*,"bins":256,"size":256},"y":{"flag":1,"argument":"1","min":*INTEGER_MIN_MINUS_1*,"max":*INTEGER_MAX_PLUS_1*,"bins":256,"size":256}},"positive":false,"negative":false,"label":[*INTEGER*,*INTEGER_PLUS_1*]}</definition>
+      </cytobank>
+    </data-type:custom_info>
+    <gating:dimension gating:compensation-ref="FCS">
+      <data-type:fcs-dimension data-type:name="*CHANNEL_NAME*" />
+    </gating:dimension>
+    <gating:dimension gating:compensation-ref="FCS">
+      <data-type:fcs-dimension data-type:name="*CHANNEL_NAME*" />
+    </gating:dimension>
+    <gating:vertex>
+      <gating:coordinate data-type:value="*INTEGER_MINUS_0.35*" />
+      <gating:coordinate data-type:value="*INTEGER_MIN_MINUS_0.5*" />
+    </gating:vertex>
+    <gating:vertex>
+      <gating:coordinate data-type:value="*INTEGER_MINUS_0.35*" />
+      <gating:coordinate data-type:value="*INTEGER_MAX_PLUS_0.5*" />
+    </gating:vertex>
+    <gating:vertex>
+      <gating:coordinate data-type:value="*INTEGER_PLUS_0.35*" />
+      <gating:coordinate data-type:value="*INTEGER_MAX_PLUS_0.5*" />
+    </gating:vertex>
+    <gating:vertex>
+      <gating:coordinate data-type:value="*INTEGER_PLUS_0.35*" />
+      <gating:coordinate data-type:value="*INTEGER_MIN_MINUS_0.5*" />
+    </gating:vertex>
+  </gating:PolygonGate>
+  <gating:BooleanGate gating:id="GateSet_*MAX_GATE_ID_PLUS_1*">
+    <data-type:custom_info>
+      <cytobank>
+        <name>*NAME**INTEGER*</name>
+        <id>*MAX_GATE_ID_PLUS_1*</id>
+        <gate_set_id>*MAX_GATE_ID_PLUS_1*</gate_set_id>
+        <version>2</version>
+        <tailored_per_population>false</tailored_per_population>
+        <definition>{"gates":[*MAX_GATE_ID_PLUS_1*],"negGates":[],"tailoredPerPopulation":{}}</definition>
+      </cytobank>
+    </data-type:custom_info>
+    <gating:and>
+      <gating:gateReference gating:ref="Gate_*MAX_GATE_ID_PLUS_1*" />
+      <!-- Boolean "and" gates are used to describe Cytobank's populations (gate sets). Here, we only have one gate defining the population, but Gating-ML requires at least two arguments for the "and" gate. Therefore, we are referencing the same gate twice. -->
+      <gating:gateReference gating:ref="Gate_*MAX_GATE_ID_PLUS_1*" />
+    </gating:and>
+  </gating:BooleanGate>

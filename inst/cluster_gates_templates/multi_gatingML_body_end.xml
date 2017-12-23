@@ -1,0 +1,18 @@
+  </gating:PolygonGate>
+  <gating:BooleanGate gating:id="GateSet_*MAX_GATE_ID_PLUS_1*">
+    <data-type:custom_info>
+      <cytobank>
+        <name>*NAME*</name>
+        <id>*MAX_GATE_ID_PLUS_1*</id>
+        <gate_set_id>*MAX_GATE_ID_PLUS_1*</gate_set_id>
+        <version>2</version>
+        <tailored_per_population>false</tailored_per_population>
+        <definition>{"gates":[*MAX_GATE_ID_PLUS_1*],"negGates":[],"tailoredPerPopulation":{}}</definition>
+      </cytobank>
+    </data-type:custom_info>
+    <gating:and>
+      <gating:gateReference gating:ref="Gate_*MAX_GATE_ID_PLUS_1*" />
+      <!-- Boolean "and" gates are used to describe Cytobank's populations (gate sets). Here, we only have one gate defining the population, but Gating-ML requires at least two arguments for the "and" gate. Therefore, we are referencing the same gate twice. -->
+      <gating:gateReference gating:ref="Gate_*MAX_GATE_ID_PLUS_1*" />
+    </gating:and>
+  </gating:BooleanGate>

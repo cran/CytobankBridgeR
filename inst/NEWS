@@ -1,0 +1,9 @@
+####################################################################################################
+
+# CytobankBridgeR 1.0.0
+
+* R scripts added:
+    * gates.apply_cluster_gates: Apply cluster gates based off of cluster IDs
+        * Allows for multicluster gate options
+    * spade.bubble_spade_nodes: Automatically bubble each SPADE node based off a given prefix
+

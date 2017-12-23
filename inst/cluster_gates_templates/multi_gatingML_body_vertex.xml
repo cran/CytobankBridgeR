@@ -1,0 +1,16 @@
+    <gating:vertex>
+      <gating:coordinate data-type:value="*INTEGER_MINUS_0.35*" />
+      <gating:coordinate data-type:value="*INTEGER_MIN_MINUS_0.75*" />
+    </gating:vertex>
+    <gating:vertex>
+      <gating:coordinate data-type:value="*INTEGER_MINUS_0.35*" />
+      <gating:coordinate data-type:value="*INTEGER_MAX_PLUS_0.25*" />
+    </gating:vertex>
+    <gating:vertex>
+      <gating:coordinate data-type:value="*INTEGER_BEFORE_PLUS_0.35*" />
+      <gating:coordinate data-type:value="*INTEGER_MAX_PLUS_0.25*" />
+    </gating:vertex>
+    <gating:vertex>
+      <gating:coordinate data-type:value="*INTEGER_BEFORE_PLUS_0.35*" />
+      <gating:coordinate data-type:value="*INTEGER_MIN_MINUS_0.75*" />
+    </gating:vertex>
